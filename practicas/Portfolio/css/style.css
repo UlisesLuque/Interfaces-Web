@@ -1,0 +1,347 @@
+body, html{
+    font-family: "Verdana";
+    margin:0;
+    padding: 0;
+}
+
+main #filtro{
+    background: no-repeat url("../img/Undo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+main #filtro video{
+    display: none;
+}
+#titulo{
+    top: 20%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-transform: uppercase;
+}
+
+#titulo h1{
+    margin: 1em 0 0 0.1em;
+    font-size: 20pt;
+    font-weight: 200;
+    background: none;
+    color: white;
+}
+
+#titulo h2{
+    margin: 0;
+    padding-left: 1em;
+    letter-spacing: 0.2em;
+    font-weight: 200;
+    font-size: 10pt;
+}
+
+#titulo h1, #titulo h2{
+    text-align: center;
+    text-shadow: 0 0 20px black;
+}
+
+nav{
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    padding: 0.01em;
+    display: block;
+    width: 100%;
+    background: #131313;
+    z-index: 1;
+}
+
+nav ul{
+    padding: 0;
+    display: flex;
+    flex: column;
+    flex-wrap:  wrap;
+}
+
+nav li{
+    display: block;
+    text-align: center;
+    flex: 1;
+    list-style: none;
+    margin: 0.5em 1em;
+}
+
+nav li a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+
+section #slide{
+    padding: 10em 0 0 0;
+    display:block;
+    box-shadow: 0 0 7px grey;
+    background: url("../img/casasRurales.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#portf{
+    padding-bottom: 4em;
+}
+#portf a{
+        text-decoration: none;
+}
+
+#portf article h1{
+    font-weight: 300;
+    display: block;
+    color: white;
+    font-size: 10pt;
+    background: rgba(0,0,0,1);
+    width: 100%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+
+#slide .flecha{
+    vertical-align: middle;
+    position: relative;
+    font-size: 24pt;
+    font-weight: 600;
+    color: white;
+    background: none;
+    border: none;
+}
+
+#slide .flecha:hover{
+   color: #00AAAA;
+}
+
+#slide .flecha:nth-child(1){
+    float: left;
+}
+
+
+#slide .flecha:nth-child(2){
+    float: right;
+}
+
+main #formacion{
+    margin: -6em 0;
+    padding: 7em 0em;
+    color: white;
+}
+
+main section h1{
+    text-transform: uppercase;
+    background: white;
+    color: #2A2A2A;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em 1em 0.5em 1.5em;
+}
+
+main #formacion p{
+    padding: 2em 4em 4em 4em;
+}
+
+main #formacion ul{
+    box-shadow: 0 0 8px grey;
+    background: #333333;
+    margin: 0;
+    padding: 3.5em 1em 1.5em 1em;
+}
+
+main #formacion ul li{
+    list-style: none;
+    font-size: 10pt;
+}
+
+main #formacion ul .porcentaje{
+    float: right;
+}
+
+.barra{
+    width: 100%;
+    margin: 1em 0 2em 0;
+}
+
+main #formacion article:nth-child(2) ul{
+    padding: 0.1em 1em;
+    
+}
+main #formacion article:nth-child(2) ul li{
+    margin: 2em;
+}
+
+main #contacto{
+    background: #00CCCC;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+main #contacto h1{
+    background: none;
+    color: white;
+}
+
+main #contacto iframe{
+    width: 100%;
+    height: 12em;
+}
+
+main #contacto>p:nth-child(2){
+    color: white;
+    font-size: 24pt;
+    margin: 0 1em 0.5em 1em;  
+
+}
+
+main #contacto>p:nth-child(3){
+    color: white;
+    font-size:14pt;
+    margin: 0 1em 2em 1em;  
+
+}
+
+
+footer{
+    font-size: 10pt;
+    background: black;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+footer #redes_sociales{
+    margin: 2em auto;
+    display: inline-flex;
+}
+
+footer #redes_sociales span{
+    margin: 0 auto;
+    flex: 1;
+    transition: 0.2s;
+    padding: 2em;
+}
+
+footer #redes_sociales span:hover{
+    padding: 4em;
+}
+
+footer #redes_sociales #facebook{
+    background: no-repeat url("../img/facebook.svg");
+}
+
+footer #redes_sociales #facebook:hover{
+    background: no-repeat url("../img/facebook_hover.svg");
+}
+
+footer #redes_sociales #twitter{
+    background: no-repeat url("../img/twitter.svg");
+}
+footer #redes_sociales #twitter:hover{
+    background: no-repeat url("../img/twitter_hover.svg");
+}
+
+footer #redes_sociales #youtube{
+    background: no-repeat url("../img/youtube.svg");
+}
+footer #redes_sociales #youtube:hover{
+    background: no-repeat url("../img/youtube_hover.svg");
+}
+
+footer #redes_sociales #google{
+    background: no-repeat url("../img/google.svg");
+}
+footer #redes_sociales #google:hover{
+    background: no-repeat url("../img/google_hover.svg");
+}
+
+@media all  and (min-width : 480px) {
+    
+    main #contacto iframe{
+       width: 90%;
+       height: 18em;
+    }
+    
+    main #titulo h1{
+        font-size: 26pt;
+    }
+    
+     main #titulo h2{
+        font-size: 13pt;
+    }
+
+    section #slide{
+        padding: 20em 0 0 0;
+    }
+
+}
+
+@media all and (min-width : 768px) {
+    
+ main #contacto iframe{
+       width: 75%;
+       height: 22em;
+    }
+    main #contenedor{
+        opacity: 1;
+    }
+    main #filtro{
+        overflow:  hidden;
+        position: relative;
+        bottom: 0;
+        background: rgba(30,15,0, 1);
+        opacity: 1;
+    }
+
+    main #filtro video{
+        width: 100%;
+        position: relative;
+        display: block;
+        opacity: 0,7;
+    }
+    
+   section #slide{
+       margin: 0 4em;
+       padding: 22em 0 0 0;
+    }
+    
+
+}
+
+@media all and (min-width : 992px) {
+    
+     main #contacto iframe{
+       width: 50%;
+       height: 26em;
+    }
+    
+    main #titulo h1{
+        font-size: 32pt;
+    }
+    
+     main #titulo h2{
+        font-size: 13pt;
+        letter-spacing: 0.4em;
+    }
+    
+    section #slide{
+        margin: 0 12em;
+        padding: 28em 0 0 0;
+    }
+}
+
+@media all and (min-width : 1200px) {
+     main #titulo h1{
+        font-size: 40pt;
+    }
+    
+     main #titulo h2{
+        font-size: 13pt;
+        letter-spacing: 0.7em;
+    }
+}
+
+
