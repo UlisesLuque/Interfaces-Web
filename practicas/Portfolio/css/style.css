@@ -83,10 +83,6 @@ section #slide{
     background-position: center;
 }
 
-section #linkSlide{
-    display: block;
-}
-
 #portf{
     padding-bottom: 4em;
 }
@@ -230,6 +226,12 @@ main #contacto p:nth-child(4){
     padding: 0.3em 0.5em;
     font-size: 11pt;
     color: #555;
+}
+
+#contactar input[type=submit]:hover{
+    background: #555;
+    color: white;
+    border: 1px solid #555;
 }
 
 #contactar input, #contactar textarea{
